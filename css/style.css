@@ -4,8 +4,10 @@
 }
 
 body{
-padding:0px;
-margin: 0px;
+  padding:0px;
+  margin: 0px;
+  width:100vw;
+  height: 100vh
 }
 
 #header{
@@ -130,8 +132,7 @@ color: #FFFFFF;
    overflow: auto;
  }
 #NubandCont{
-  position: relative;
-  top:5em;
+
   margin-bottom: 300px;
   background:;
   /*background-image:url("Vector Shape.png");*/
@@ -213,8 +214,9 @@ font-size:14pt;
   font-family:'Roboto-light';
 }
 #Notifyme{
-  display: flex;
-
+  position: relative;
+  top:5em;
+  grid-column: 2;
   background:#ffa31a;
   padding: 10px 40px;
   top: 100px;
@@ -294,9 +296,9 @@ justify-content: center;
   background-image: url("Vector 3.png");
 
   background-size:cover;
-
+background-position: center;
   display:flex;
-  flex-wrap: wrap;
+
   justify-content:space-around;
   align-items: flex-end;
   font-family:'Roboto-light';
@@ -311,8 +313,8 @@ justify-content: center;
   font-family: 'Roboto-Medium';
 }
 #Footeritem2{
-  position: relative;
-  bottom:37px;
+    position: relative;
+    bottom:37px;
 width:300px;
 background:;
 color: white;
@@ -330,4 +332,12 @@ color: white;
   src:url("roboto/Roboto-Medium.ttf");
   font-style: normal;
   font-weight:100;
+}
+@media (max-width:600px){
+  #NubandCont{display: flex;flex-direction: column; justify-content: ;
+    font-size: 8pt;
+
+  }
+}
+
 }
